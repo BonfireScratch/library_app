@@ -1,3 +1,5 @@
-# library_app
+# client
 
-This repository contains the code for an online school library application.
+This folder contains the app's front-end code.
+
+The PWA was build with the React framework, along with Bootstrap 5.1 for the CSS.
