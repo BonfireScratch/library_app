@@ -1,0 +1,63 @@
+$primary: #099999;
+
+.calendar {
+	box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, 0.4);
+	width: 100%;
+	border-radius: 1vw;
+	overflow: hidden;
+	user-select: none;
+
+	.calHeader {
+		background-color: $primary;
+		color: #fff;
+	}
+
+	.dayLabel {
+		text-transform: uppercase;
+		font-weight: 700;
+		color: #b3b3b3;
+		user-select: none;
+	}
+
+	.dayNumber {
+		width: 100%;
+		padding: 0;
+
+		&.active {
+			font-weight: 700;
+			background-color: transparentize($primary, 0.95);
+			border-radius: 1vw;
+		}
+
+		&.muted {
+			color: rgba(0, 0, 0, 0.3);
+		}
+
+		&.between {
+			border-radius: 0;
+		}
+    
+		&.start,
+		&.between,
+		&.end {
+			background-color: invert($primary);
+			color: #fff;
+		}
+
+		&.start {
+			border-radius: 1vw 0 0 1vw;
+		}
+
+		&.end {
+			border-radius: 0 1vw 1vw 0;
+		}
+
+		&.start.end {
+			border-radius: 1vw;
+		}
+	}
+}
+
+.fa-icon {
+	font-size: 2.5vw;
+}

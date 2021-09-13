@@ -1,0 +1,24 @@
+.header {
+  background-color: #009999;
+  color: #fff;
+
+  hr {
+    background-color: #fff;
+    border-top-style: solid;
+    border-top-color: #fff;
+    border-top-width: clamp(8px, 0.8vw, 20px);
+    border-radius: 4px;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .headerContent {
+    justify-content: flex-end;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .headerContent {
+    justify-content: center;
+  }
+}
